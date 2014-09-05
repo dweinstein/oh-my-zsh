@@ -5,7 +5,7 @@ ZSH=$HOME/git/oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="blinks"
 
 # Every command that takes longer than 5 seconds (I'm pretty sure) will display the output of time.
 export REPORTTIME=5
