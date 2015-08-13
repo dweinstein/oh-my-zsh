@@ -5,7 +5,7 @@ ZSH=$HOME/git/oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="david"
+ZSH_THEME="agnoster-custom"
 
 # Every command that takes longer than 5 seconds (I'm pretty sure) will display the output of time.
 export REPORTTIME=5
@@ -44,8 +44,16 @@ DISABLE_CORRECTION="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(redis-cli tmux repo gitfast web-search vagrant brew docker cp battery themes)
 
+zstyle ':completion:*' completer _expand _complete _files \
+  _correct _approximate
+
+#zle -C complete-file menu-expand-or-complete _generic
+#zstyle ':completion:complete-file:*' completer _files
+#bindkey -M viins '^xf'      complete-file
+
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 source ${HOME}/.exports
+source ${HOME}/.functions
 source ${HOME}/.aliases
