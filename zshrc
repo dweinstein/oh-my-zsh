@@ -54,9 +54,9 @@ zstyle ':completion:*' completer _expand _complete _files \
 #zstyle ':completion:complete-file:*' completer _files
 #bindkey -M viins '^xf'      complete-file
 
+source ${HOME}/.exports
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-source ${HOME}/.exports
 source ${HOME}/.functions
 source ${HOME}/.aliases
