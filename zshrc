@@ -42,10 +42,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(
-  redis-cli tmux repo gitfast web-search vagrant brew docker cp battery themes
-  docker-machine docker-compose git adb
-)
+plugins=(tmux gitfast web-search docker archlinux docker cp battery themes git adb)
 
 zstyle ':completion:*' completer _expand _complete _files \
   _correct _approximate

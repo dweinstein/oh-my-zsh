@@ -26,3 +26,4 @@ alias grep="grep $GREP_OPTIONS"
 unset GREP_OPTIONS
 unset VCS_FOLDERS
 unfunction grep-flag-available
+export GREP_COLOR='1;32'
